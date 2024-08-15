@@ -1,0 +1,72 @@
+*{
+    margin: 0; /* vertical distance bw header*/
+    padding:0; /* horizontal distance of header text*/
+}
+
+nav{
+    background-color: rgb(0, 0, 0); /*nav tab colourd*/
+    color: rgb(255, 255, 255); /*color of header*/
+    height: 75px ; /* vertical hight of navbar*/
+    font-size: 27px ; /*font sixe of the header */
+    display: flex;
+    align-items: center; /*position of the header */
+    padding: 0 12px; /* horizontal position of the text*/
+}
+
+
+nav ul {
+    list-style-type: none; /*removed dot with tiktaktoe*/
+}
+
+
+.gamecontainer{
+    /* background-color: rgb(231, 231, 231); background color of the container */
+    display: flex; /* ITS DISPLAYS ALL THE ELEMENTS*/
+    justify-content: center; /* position of elements like grid etc*/
+    margin-top: 60px ; /*IT FIX ALL ELEMENTS OF CONTAINER IN CENTER*/
+
+}
+
+.container{
+    /* background-color: rgb(163, 163, 163); */
+    display: grid; /*to diplay grid*/
+    grid-template-rows: repeat(3 , 10vw) ;  /*to show responsive rows*/
+    grid-template-columns: repeat(3 , 10vw); /*to show responsive couloms*/
+    
+
+}
+
+.box{
+    border: 2px solid black;  /*used to visible grid lines */
+    font-size: 8vw; /*font side of grid elements*/  
+    cursor: pointer;  /*change cursor to hand*/
+    display :flex;
+    justify-content: center; /* grid elements set to center*/
+    align-items: center;     /* grid elements set to center vertically*/
+}
+
+.box:hover{    /* THIS FUNCTION IS USED WHEN POINTER GOES ON GRID*/
+    background-color: rgb(237, 235, 255); /* COLOR WHEN ICON REACHED */
+}
+
+
+.gameinfo{
+    padding:0 34px;  /*to create distance of font from the grid */  
+
+}
+
+.bt-0{
+    border-top: 0;   /*TO REMOVE TO DOWN AND SIDES*/
+}
+
+.bb-0{
+    border-bottom: 0;/*TO REMOVE TO DOWN AND SIDES*/
+}
+
+.bl-0{
+    border-left: 0;/*TO REMOVE TO DOWN AND SIDES*/
+}
+
+.br-0{
+    border-right: 0;/*TO REMOVE TO DOWN AND SIDES*/
+}
